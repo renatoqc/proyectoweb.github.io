@@ -1,8 +1,8 @@
-Desarrollo Basado en Plataformas 
+DESARROLO BASADO EN PLATAFORMAS
 
-Proyecto Web
+"Proyecto Web"
 
-Integrantes
+Integrantes:
 
 -Carlos Huaylla Basilio
 
