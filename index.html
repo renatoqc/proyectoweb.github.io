@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Pet Fashion</title>
+		<!--Estilo de iconos-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+	<header>
+		<!--Contenedor del encabezado-->
+		<div class="container-hero">
+				<!--Contenedor relacionado con el soporte al cliente-->
+			<div class="container hero">
+				<div class="customer-support">
+					<i class="fa-solid fa-headset"></i>
+					<div class="content-customer-support">
+						<span class="text">Soporte al cliente</span>
+						<span class="number">123-456-7890</span>
+					</div>
+				</div>
+				
+				<!-- Logo de la marca -->
+				<div class="container-logo">
+					<h1 class="logo"><a href="/">Pet</a></h1>
+					<i class="fa-solid fa-paw"></i>
+					<h1 class="logo"><a href="/">Fashion</a></h1>
+				</div>
+	
+				<!-- Iconos de usuario y carrito -->
+				<div class="container-icons">
+					<div class="container-user">
+						<i class="fa-solid fa-user"></i>
+						<div class="user-panel" style="display: none;">
+							<div class="user-panel-content">
+								<button class="close-user-btn">&times;</button>
+								<ul>
+									<li><a href="login.html">Ingresar</a></li>
+									<li><a href="signup.html">Crear cuenta</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+	
+					<div class="container-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+						<div class="content-shopping-cart">
+							<span class="number">(0)</span>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Panel del carrito de compras -->
+				<div class="cart-panel">
+					<div class="cart-panel-content">
+						<button class="close-cart-btn">&times;</button>
+						<h2>Carrito:</h2>
+						<div class="cart-items"></div>
+						<div class="cart-summary">
+							<p class="cart-quantity">Cantidad: <span class="total-quantity">0</span></p>
+							<p class="cart-total">Subtotal: S/ <span class="total-price">0.00</span></p>
+							<button class="checkout-btn">Finalizar pedido</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Barra de navegación -->
+		<div class="container-navbar">
+			<nav class="navbar container">
+				<ul class="menu">
+					<a href="index.html">Inicio</a>
+					<a href="accesorios.html">Accesorios</a>
+					<a href="ropa.html">Ropa</a>
+					<a href="cuidado.html">Cuidado e Higiene</a>
+					<a href="ofertas.html">Ofertas</a>
+				</ul>
+			</nav>
+	
+			<!-- Formulario de búsqueda -->
+			<form class="search-form">
+				<input type="search" placeholder="Buscar tus productos favoritos" />
+				<button class="btn-search">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</form>
+		</div>
+	</header>
+
+		<!--Banner-->	
+        <section class="banner">
+			<div class="content-banner">
+				<p>Pet Fashion</p>
+				<h2>Engríelo<br /> con nuevos accesorios </h2>
+				<a href="#">Comprar ahora</a>
+			</div>
+		</section>
+
+		<main class="main-content">
+			<!-- Sección de características -->
+			<section class="container container-features">
+				<div class="card-feature">
+					<i class="fa-solid fa-plane-up"></i>
+					<div class="feature-content">
+						<span>Envío gratuito a nivel mundial</span>
+						<p>En pedido superior a S/.100</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-gift"></i>
+					<div class="feature-content">
+						<span>Ofertas</span>
+						<p>Ofrece 50% de descuentos</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-headset"></i>
+					<div class="feature-content">
+						<span>Servicio al cliente 24/7</span>
+						<p>LLámenos 24/7 al 123-456-7890</p>
+					</div>
+				</div>
+			</section>
+
+			 <!-- Sección de productos destacados -->
+			<section class="container top-products">
+				<h1 class="heading-1">Productos en oferta</h1>
+				<div class="container-options">
+					<span class="active">Destacados</span>
+					<span>Más recientes</span>
+					<span>Mejores Vendidos</span>
+				</div>
+				
+				<!-- Listado de productos -->
+				<div class="container-products">
+					<!-- Producto 1 -->
+					<div class="card-product">
+						<!-- Imagen y detalles del producto -->
+						<div class="container-img">
+							<img src="img/promo_1.png" alt="Coche" />
+						</div>
+						<div class="content-card-product">
+							<h3>Coche 3 en 1 Pet Rover Hpz bingo bag stroller para mascotas</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 690.00 <span>S/.1,190.00</span></p>
+						</div>
+					</div>		
+					<!-- Producto 2 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_2.png" alt="Alimento" />
+						</div>
+						<div class="content-card-product">
+							<h3>Mon Ami 2.8 kg. cachorro alimento + 1.4 kg. GRATIS</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 278.00 <span>S/.478.00</span></p>
+						</div>
+					</div>
+					<!-- Producto 3 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_3.png" alt="Set juguete" />
+						</div>
+						<div class="content-card-product">
+							<h3>Magic Trick Training Set juguete de entrenamiento para perro</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 119.00 <span>S/.129.00</span></p>
+						</div>
+					</div>		
+					<!-- Producto 4 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_4.jpg" alt="juguetes" />
+						</div>
+						<div class="content-card-product">
+							<h3>Compra 3 juguetes y te llevas 1 más ¡Gratis!</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 20.00 <span>S/.50.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 5 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_5.png" alt="Arm & Hammer"/>
+						</div>
+						<div class="content-card-product">
+							<h3>Arm & Hammer Pads for Stay at Home Dogs 100 pads</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 169.00 <span>S/.179.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 6 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_6.png" alt="Cama" />
+						</div>
+						<div class="content-card-product">
+							<h3>Cama Pet Rover HPZ™ Multi-Functions Convertible</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 399.00 <span>S/.450.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 7 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_7.png" alt="Coche" />
+						</div>
+						<div class="content-card-product">
+							<h3>Coche para Mascotas hpztm pet rover xl extra-long premium stroller for small/medium/large dogs, cats and pets (Taupe)</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 990.00 <span>S/.1,190.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 8 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_8.png" alt="Coche" />
+						</div>
+						<div class="content-card-product">
+							<h3>Coche para Mascotas hpztm pet rover titan hd premium super-size stroller suv for small/medium/large/x-large dogs, cats and pets (Blue)</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 1,179.00 <span>S/.1,890.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 9 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_9.png" alt="Correa" />
+						</div>
+						<div class="content-card-product">
+							<h3>H-Harness</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 79.00 <span>S/.100.00</span></p>
+						</div>
+					</div>
+					<!-- Producto 10 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_10.png" alt="Correa" />
+						</div>
+						<div class="content-card-product">
+							<h3>Correa Hands-free manos libres</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 80.00 <span>S/.120.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 11 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_11.png" alt="Correa" />
+						</div>
+						<div class="content-card-product">
+							<h3> Ruff Correa</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 90.00 <span>S/.115.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 12 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_12.png" alt="Correa" />
+						</div>
+						<div class="content-card-product">
+							<h3>FlyHarness Pechera</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 100.00 <span>S/.169.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 13 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_13.png" alt="Cama" />
+						</div>
+						<div class="content-card-product">
+							<h3>Tienda de invierno para mascotas.</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 77.94 <span>S/.129.90</span></p>
+						</div>
+					</div>	
+					<!-- Producto 14 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_14.png" alt="ropa" />
+						</div>
+						<div class="content-card-product">
+							<h3>Bandana de modelos surtidos para mascota. Recibirás un color y/o diseño al azar según stock.</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 7.90 <span>S/.10.00</span></p>
+						</div>
+					</div>	
+					<!-- Producto 15 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_15.png" alt="comida" />
+						</div>
+						<div class="content-card-product">
+							<h3>Hills PD i/d Low Fat GI Restore 8.5 lb Cuidado Digestivo Bajo en grasa (3.85 Kg)</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 241.90 <span>S/.260.00</span></p>
+						</div>
+					</div>
+					<!-- Producto 16 -->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/promo_16.png" alt="funda" />
+						</div>
+						<div class="content-card-product">
+							<h3>Kong Xl 2 En 1 Funda De Asiento Y Hamaca</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">S/ 350.00 <span>S/.400.00</span></p>
+						</div>
+					</div>
+			</section>
+
+			<!-- Sección del pie de página -->
+			<footer class="footer">
+				<div class="container container-footer">
+					<!-- Menú de navegación del pie de página -->
+					<div class="menu-footer">
+						<!-- Información de contacto y enlaces -->
+						<div class="contact-info">
+							<!-- Detalles de contacto y enlaces -->
+							<p class="title-footer">Sobre Pet Fashion</p>
+							<ul>
+								<li>Teléfono: 123-456-7890</li>
+								<li>¿Cómo comprar?</li>
+								<li>Facturación electrónica</li>
+								<li>Legales</li>
+							</ul>
+							<div class="social-icons">
+								<span class="facebook">
+									<i class="fa-brands fa-facebook-f"></i>
+								</span>
+								<span class="whatsapp">
+									<i class="fa-brands fa-whatsapp"></i>
+								</span>
+								<span class="youtube">
+									<i class="fa-brands fa-youtube"></i>
+								</span>
+								<span class="instagram">
+									<i class="fa-brands fa-instagram"></i>
+								</span>
+							</div>
+						</div>
+	
+						<!-- Información de atención al cliente -->
+						<div class="information">
+							<p class="title-footer">Atención al cliente</p>
+							<ul>
+								<li><a href="#">info@petfashion.pe</a></li>
+								<li><a href="#">Tipos de entrega</a></li>
+								<li><a href="#">Preguntas frecuentes</a></li>
+								<li><a href="#">Cambios y devoluciones</a></li>
+								<li><a href="#">Medios de pago </a></li>
+							</ul>
+						</div>
+	
+						<!-- Enlaces de ayuda y soporte -->
+						<div class="my-account">
+							<p class="title-footer">Te ayudamos</p>
+							<ul>
+								<li><a href="#">Búsqueda</a></li>
+								<li><a href="#">Términos y condiciones</a></li>
+								<li><a href="#">Política de envíos</a></li>
+								<li><a href="#">Términos del servicio</a></li>
+								<li><a href="#">Política de reembolsos</a></li>
+							</ul>
+						</div>
+	
+						<!-- Boletín informativo -->
+						<div class="newsletter">
+							<p class="title-footer">Boletín informativo</p>
+							<div class="content">
+								<p>
+									Se el primero en recibir nuestras ofertas y novedades
+								</p>
+								<input type="email" placeholder="Ingresa tu email...">
+								<button>Enviar</button>
+							</div>
+						</div>
+					</div>
+	
+					 <!-- Derechos de autor y medios de pago -->
+					<div class="copyright">
+						<p>
+							Alyson Gisely Perez Flores &copy; 2024
+						</p>
+	
+						<img src="img/pagos.png" alt="Pagos">
+					</div>
+				</div>
+			</footer>
+		</body>
+	</html>
